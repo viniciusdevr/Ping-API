@@ -1,13 +1,21 @@
 using Microsoft.EntityFrameworkCore;
+using Ping_API.Application.Interfaces;
+using Ping_API.Application.Services;
 using Ping_API.Infrastructure.Data;
+using Ping_API.Infrastructure.Repositories;
+using PingAPI.Domain.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllers();
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
+builder.Services.AddEndpointsApiExplorer();
+
+builder.Services.AddScoped<IReminderRepository, ReminderRepository>();
+builder.Services.AddScoped<IReminderService, ReminderService>();
+
+
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
