@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Ping-API.Application/Ping-API.Application.csproj" Id="3d68ca5f-1d01-4150-826e-efe464c506e3" />
+  <Project Path="Ping-API.Infrastructure/Ping-API.Infrastructure.csproj" Id="3b4c014c-412c-4278-8708-4596530dbe95" />
+  <Project Path="Ping-API/Ping-API.API.csproj" />
+  <Project Path="PingAPI.Domain/PingAPI.Domain.csproj" Id="16881b8c-b12e-47eb-9b51-1a4ff549a753" />
+</Solution>
