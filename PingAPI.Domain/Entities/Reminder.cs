@@ -19,7 +19,7 @@
             NotificationDate = notificationDate;
             AdvanceNotice = advanceNotice;
             Link = link;
-            CreatedAt = DateTime.UtcNow;
+            CreatedAt = createdAt;
         }
 
         protected Reminder() { }
