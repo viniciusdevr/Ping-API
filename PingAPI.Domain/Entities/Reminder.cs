@@ -11,6 +11,7 @@
         public string? Link { get; private set; }
         public DateTime CreatedAt { get; private set; }
         public DateTime? UpdatedAt { get; private set; }
+        public bool IsNotified { get; set; }
 
         public Reminder(string title, string description, DateTime notificationDate, int advanceNotice, string? link, DateTime createdAt)
         {
@@ -34,6 +35,10 @@
             UpdatedAt = DateTime.UtcNow;
         }
 
+        public void Notificated()
+        {
+            IsNotified = true;
+        }
 
     }
 }

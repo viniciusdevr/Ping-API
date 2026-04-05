@@ -36,6 +36,10 @@ namespace Ping_API.Infrastructure.Configuration
             builder.Property(b => b.CreatedAt)
                 .HasColumnType("datetime2")
                 .IsRequired();
+
+            builder.Property(b => b.IsNotified)
+                .HasDefaultValue(false)
+                .IsRequired();
         }
     }
 }
