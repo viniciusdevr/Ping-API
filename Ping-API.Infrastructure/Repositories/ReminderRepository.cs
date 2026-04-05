@@ -53,7 +53,12 @@ namespace Ping_API.Infrastructure.Repositories
             return await _context.Reminders.ToListAsync();
         }
 
-
-
+        public async Task<IEnumerable<Reminder>> GetPendingAsync()
+        {
+            IEnumerable<Reminder> list = await _context.Reminders
+                .Where(r => r.IsNotified == false)
+                .ToListAsync();
+            return list;
+        }
     }
 }
