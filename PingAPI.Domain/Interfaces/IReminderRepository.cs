@@ -9,5 +9,6 @@ namespace PingAPI.Domain.Interfaces
         Task AddAsync(Reminder reminder);
         Task UpdateAsync(Reminder reminder);
         Task DeleteAsync(int id);
+        Task<IEnumerable<Reminder>> GetPendingAsync();
     }
 }
