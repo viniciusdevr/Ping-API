@@ -1,7 +1,8 @@
 ﻿using Microsoft.Extensions.Configuration;
-using Ping_API.Application.Interfaces;
 using System.Text;
 using System.Text.Json;
+using Ping_API.Application.Interfaces;
+
 
 namespace Ping_API.Infrastructure.ExternalServices
 {
