@@ -1,4 +1,4 @@
-﻿namespace Ping_API.Application.Interfaces
+﻿namespace Ping_API.Interfaces
 {
     public interface IDiscordWebhookClient
     {
